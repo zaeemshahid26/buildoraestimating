@@ -119,9 +119,9 @@ Buildora Estimating
 <!-- HERO -->
 <section class="hero">
 <div class="container">
-<h1>Construction Estimating & Bidding Experts</h1>
+<h1>Strategic Construction Estimating & Bidding Experts</h1>
 <p class="mt-3 fs-5">Accurate. Fast. Reliable.</p>
-<a href="#contact" class="btn btn-orange mt-4 px-4 py-2">Request a Quote</a>
+<a href="#contact" class="btn btn-orange mt-4 px-4 py-2">Request a Professional Quote</a>
 </div>
 </section>
 
@@ -142,7 +142,7 @@ Buildora Estimating
 <p>Years Experience</p>
 </div>
 <div class="col-md-3">
-<h2>24-48hr</h2>
+<h2>24hr</h2>
 <p>Fast Turnaround</p>
 </div>
 </div>
@@ -152,7 +152,7 @@ Buildora Estimating
 <!-- SERVICES -->
 <section id="services" class="section-padding bg-light">
 <div class="container text-center">
-<h2 class="mb-5">Our Services</h2>
+<h2 class="mb-5">Our Core Services</h2>
 
 <div class="row g-4">
 
@@ -244,63 +244,6 @@ Our detailed review process ensures industry-leading accuracy and competitive pr
 </section>
 
 <!-- CONTACT -->
-<!-- Start Contact Form -->
-<section id="contact" style="padding:50px; background:#f9f9f9;">
-  <div style="max-width:600px; margin:0 auto; background:#fff; padding:40px; border-radius:10px; box-shadow:0 4px 15px rgba(0,0,0,0.1);">
-    <h2 style="text-align:center; margin-bottom:30px; font-family:sans-serif; color:#333;">Contact Us</h2>
-
-    <!-- Formspree Form -->
-    <form action="https://formspree.io/f/xpqjbjor" method="POST" style="display:flex; flex-direction:column; gap:20px;">
-      <input type="text" name="name" placeholder="Your Full Name" required style="padding:15px; border:1px solid #ccc; border-radius:5px; font-size:16px;">
-      <input type="email" name="email" placeholder="Your Email Address" required style="padding:15px; border:1px solid #ccc; border-radius:5px; font-size:16px;">
-      <input type="tel" name="phone" placeholder="Phone Number" style="padding:15px; border:1px solid #ccc; border-radius:5px; font-size:16px;">
-      <textarea name="message" placeholder="Your Message" required style="padding:15px; border:1px solid #ccc; border-radius:5px; font-size:16px; min-height:120px;"></textarea>
-      <button type="submit" style="padding:15px; background:#007bff; color:#fff; border:none; border-radius:5px; font-size:16px; cursor:pointer; transition:0.3s;">Send Message</button>
-      <p id="formStatus" style="text-align:center; color:green; display:none; margin-top:10px;">Message Sent Successfully!</p>
-    </form>
-
-  </div>
-</section>
-
-<script>
-const form = document.querySelector("#contact form");
-const status = document.getElementById("formStatus");
-
-form.addEventListener("submit", function(e){
-  e.preventDefault();
-  const data = new FormData(form);
-
-  fetch(form.action, {
-    method: form.method,
-    body: data,
-    headers: { 'Accept': 'application/json' }
-  }).then(response => {
-    if (response.ok) {
-      status.style.display = "block";
-      status.innerText = "Message Sent Successfully!";
-      status.style.color = "green";
-      form.reset();
-    } else {
-      response.json().then(data => {
-        if (Object.hasOwn(data, 'errors')) {
-          status.style.display = "block";
-          status.style.color = "red";
-          status.innerText = data["errors"].map(error => error["message"]).join(", ");
-        } else {
-          status.style.display = "block";
-          status.style.color = "red";
-          status.innerText = "Oops! Something went wrong.";
-        }
-      })
-    }
-  }).catch(() => {
-    status.style.display = "block";
-    status.style.color = "red";
-    status.innerText = "Oops! Something went wrong.";
-  });
-});
-</script>
-<!-- End Contact Form -->
 <section id="contact" class="section-padding bg-light text-center">
 <div class="container">
 <h2>Request a Professional Estimate</h2>
@@ -324,8 +267,7 @@ Call Now
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
-window.addEventListener("scroll", function() {
-document.querySelector(".navbar").classList.toggle("scrolled", window.scrollY > 50);
+window.addEventListener("scroll", function() {document.querySelector(".navbar").classList.toggle("scrolled", window.scrollY > 50);
 });
 
 const counters = document.querySelectorAll('.counter');
