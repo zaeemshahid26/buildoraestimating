@@ -16,83 +16,52 @@ body { font-family: 'Segoe UI', sans-serif; }
     transition: 0.4s;
     padding: 15px 0;
 }
-
 .navbar.scrolled {
-    background: white !important;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background: #fff !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
-
-.navbar-brand img {
-    height: 38px;
-    margin-right: 8px;
-}
-
-.nav-link {
-    font-weight: 500;
-}
-
-.nav-link.active {
-    color: #ff6a00 !important;
-}
+.navbar-brand img { height: 38px; margin-right: 8px; }
+.nav-link { font-weight: 500; }
+.nav-link.active { color: #ff6a00 !important; }
 
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
     url('https://images.unsplash.com/photo-1503387762-592deb58ef4e');
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 160px 0;
+    padding: 170px 0;
     text-align: center;
 }
-
-.hero h1 {
-    font-size: 50px;
-    font-weight: 700;
-}
+.hero h1 { font-size: 52px; font-weight: 700; }
 
 .btn-orange {
     background: #ff6a00;
     color: white;
     border: none;
 }
+.btn-orange:hover { background: #e65c00; }
 
-.btn-orange:hover {
-    background: #e65c00;
-}
+.section-padding { padding: 110px 0; }
 
 .stats {
     background: #ff6a00;
     color: white;
     padding: 80px 0;
 }
+.counter { font-size: 45px; font-weight: bold; }
 
-.counter {
-    font-size: 45px;
-    font-weight: bold;
-}
-
-.section-padding {
-    padding: 110px 0;
-}
-
-.card {
-    transition: 0.4s;
-}
-
+.card { transition: 0.4s; border: none; }
 .card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
-.fade-in {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.8s ease;
-}
-
-.fade-in.show {
-    opacity: 1;
-    transform: translateY(0);
+.cta {
+    background: linear-gradient(135deg,#ff6a00,#ff8c00);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
 }
 
 footer {
@@ -122,13 +91,9 @@ Buildora Estimating
 <div class="collapse navbar-collapse" id="navbarNav">
 <ul class="navbar-nav ms-auto align-items-lg-center">
 
-<li class="nav-item me-3">
-<a class="nav-link" href="#services">Services</a>
-</li>
-
-<li class="nav-item me-3">
-<a class="nav-link" href="#contact">Contact</a>
-</li>
+<li class="nav-item me-3"><a class="nav-link" href="#services">Services</a></li>
+<li class="nav-item me-3"><a class="nav-link" href="#faq">FAQ</a></li>
+<li class="nav-item me-3"><a class="nav-link" href="#contact">Contact</a></li>
 
 <li class="nav-item me-3">
 <a class="nav-link" href="mailto:buildoraestimating@gmail.com">
@@ -153,10 +118,10 @@ Buildora Estimating
 
 <!-- HERO -->
 <section class="hero">
-<div class="container fade-in">
-<h1>Construction Estimating & Bidding Solutions</h1>
+<div class="container">
+<h1>Strategic Construction Estimating & Bidding Experts</h1>
 <p class="mt-3 fs-5">Accurate. Fast. Reliable.</p>
-<a href="#contact" class="btn btn-orange mt-4 px-4 py-2">Request a Quote</a>
+<a href="#contact" class="btn btn-orange mt-4 px-4 py-2">Request a Professional Quote</a>
 </div>
 </section>
 
@@ -164,62 +129,113 @@ Buildora Estimating
 <section class="stats text-center">
 <div class="container">
 <div class="row">
-
 <div class="col-md-3">
 <div class="counter" data-target="850">0</div>
 <p>Projects Completed</p>
 </div>
-
 <div class="col-md-3">
 <div class="counter" data-target="99">0</div>
 <p>Bid Success Rate %</p>
 </div>
-
 <div class="col-md-3">
 <div class="counter" data-target="20">0</div>
 <p>Years Experience</p>
 </div>
-
 <div class="col-md-3">
 <h2>24hr</h2>
 <p>Fast Turnaround</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section-padding bg-light">
+<div class="container text-center">
+<h2 class="mb-5">Our Core Services</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="card p-4">
+<i class="bi bi-building fs-1 text-warning mb-3"></i>
+<h5>Residential Estimating</h5>
+<p>Detailed takeoffs & cost projections for residential projects.</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-4">
+<i class="bi bi-bank fs-1 text-warning mb-3"></i>
+<h5>Commercial Estimating</h5>
+<p>Comprehensive commercial bid preparation & cost analysis.</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-4">
+<i class="bi bi-graph-up-arrow fs-1 text-warning mb-3"></i>
+<h5>Bid Strategy & Analysis</h5>
+<p>Optimized bidding strategy to maximize win rate.</p>
+</div>
 </div>
 
 </div>
 </div>
 </section>
 
-<!-- SERVICES -->
-<section id="services" class="section-padding bg-light fade-in">
-<div class="container text-center">
-<h2 class="mb-5">Our Services</h2>
+<!-- CTA -->
+<section class="cta">
+<div class="container">
+<h2>Ready to Win More Bids?</h2>
+<p class="mt-3">Partner with professionals who deliver precision & profitability.</p>
+<a href="#contact" class="btn btn-light mt-3 px-4 py-2">Start Your Estimate Today</a>
+</div>
+</section>
 
-<div class="row g-4">
+<!-- FAQ -->
+<section id="faq" class="section-padding">
+<div class="container">
+<h2 class="text-center mb-5">Frequently Asked Questions</h2>
 
-<div class="col-md-4">
-<div class="card p-4 border-0">
-<i class="bi bi-building fs-1 text-warning mb-3"></i>
-<h5>Residential Estimating</h5>
-<p>Detailed quantity takeoffs and cost breakdowns for residential projects.</p>
-<a href="#contact" class="btn btn-orange mt-2">Request Quote</a>
+<div class="accordion" id="faqAccordion">
+
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#q1">
+How fast is your turnaround time?
+</button>
+</h2>
+<div id="q1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+<div class="accordion-body">
+Most estimates are delivered within 24–48 hours depending on project scope.
 </div>
 </div>
-
-<div class="col-md-4">
-<div class="card p-4 border-0">
-<i class="bi bi-bank fs-1 text-warning mb-3"></i>
-<h5>Commercial Estimating</h5>
-<p>Accurate commercial construction estimating and bidding strategy.</p>
-<a href="#contact" class="btn btn-orange mt-2">Request Quote</a>
-</div>
 </div>
 
-<div class="col-md-4">
-<div class="card p-4 border-0">
-<i class="bi bi-graph-up-arrow fs-1 text-warning mb-3"></i>
-<h5>Bid Preparation</h5>
-<p>Complete bid documents and subcontractor comparison analysis.</p>
-<a href="#contact" class="btn btn-orange mt-2">Request Quote</a>
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q2">
+What software do you use?
+</button>
+</h2>
+<div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+<div class="accordion-body">
+We use PlanSwift & Bluebeam for precise digital takeoffs and cost analysis.
+</div>
+</div>
+</div>
+
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q3">
+How accurate are your estimates?
+</button>
+</h2>
+<div id="q3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+<div class="accordion-body">
+Our detailed review process ensures industry-leading accuracy and competitive pricing.
+</div>
 </div>
 </div>
 
@@ -228,10 +244,10 @@ Buildora Estimating
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section-padding fade-in">
-<div class="container text-center">
+<section id="contact" class="section-padding bg-light text-center">
+<div class="container">
 <h2>Request a Professional Estimate</h2>
-<p class="mb-4">Send us your plans and get a fast response.</p>
+<p class="mb-4">Send us your project plans today.</p>
 
 <a href="mailto:buildoraestimating@gmail.com" class="btn btn-orange px-4 py-2 me-2">
 Email Us
@@ -251,12 +267,10 @@ Call Now
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
-// Navbar scroll effect
 window.addEventListener("scroll", function() {
 document.querySelector(".navbar").classList.toggle("scrolled", window.scrollY > 50);
 });
 
-// Counter animation
 const counters = document.querySelectorAll('.counter');
 counters.forEach(counter => {
 const updateCount = () => {
@@ -272,16 +286,6 @@ counter.innerText = target + (target === 99 ? "%" : "+");
 };
 updateCount();
 });
-
-// Fade in animation
-const faders = document.querySelectorAll('.fade-in');
-const appearOnScroll = new IntersectionObserver(entries => {
-entries.forEach(entry => {
-if(entry.isIntersecting) entry.target.classList.add('show');
-});
-}, { threshold: 0.3 });
-
-faders.forEach(fader => appearOnScroll.observe(fader));
 </script>
 
 </body>
