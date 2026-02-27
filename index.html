@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zaeem Estimating | USA Construction Estimating Experts</title>
+<title>Buildora Estimating LLC | USA Construction Estimating Experts</title>
 <meta name="description" content="Professional Construction Estimating & Quantity Takeoff Services for USA Contractors. Accurate, Confidential & Fast Delivery.">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -25,13 +25,6 @@ transition:.3s;
 scroll-behavior:smooth;
 }
 
-.dark{
---bg:#0f172a;
---light:#1e293b;
---dark:#fff;
-color:#eee;
-}
-
 .container{width:90%;max-width:1200px;margin:auto;}
 section{padding:100px 0;}
 h2{text-align:center;margin-bottom:50px;font-size:34px;}
@@ -44,10 +37,10 @@ border-radius:8px;
 text-decoration:none;
 display:inline-block;
 transition:.3s;
+font-weight:500;
 }
 .btn:hover{opacity:.85}
 
-/* TOP BAR */
 .topbar{
 background:#000;
 color:#fff;
@@ -56,25 +49,50 @@ padding:8px 0;
 text-align:center;
 }
 
-/* NAV */
 header{
 position:fixed;
 width:100%;
 top:0;
-background:rgba(0,0,0,.7);
-backdrop-filter:blur(10px);
+background:rgba(0,0,0,.85);
 padding:15px 0;
 z-index:1000;
 }
-nav{display:flex;justify-content:space-between;align-items:center;}
-.logo{color:#fff;font-weight:700;font-size:22px;}
-nav ul{display:flex;gap:30px;list-style:none;}
-nav ul li a{color:#fff;text-decoration:none;}
-nav ul li a:hover{color:var(--primary);}
-.menu-toggle{display:none;color:#fff;font-size:26px;cursor:pointer;}
-.theme-toggle{color:#fff;margin-right:15px;cursor:pointer;}
 
-/* HERO */
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+color:#fff;
+font-weight:700;
+font-size:22px;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+margin:0;
+padding:0;
+}
+
+nav ul li a{
+color:#fff;
+text-decoration:none;
+font-weight:500;
+}
+
+nav ul li a:hover{color:var(--primary);}
+
+.menu-toggle{
+display:none;
+color:#fff;
+font-size:26px;
+cursor:pointer;
+}
+
 .hero{
 background:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)),
 url('https://images.unsplash.com/photo-1503387762-592deb58ef4e');
@@ -84,20 +102,26 @@ color:#fff;
 text-align:center;
 padding:220px 20px 140px;
 }
+
 .hero h1{font-size:46px;margin-bottom:20px;}
 .hero p{max-width:700px;margin:auto;margin-bottom:35px;font-size:18px;}
 
-/* STATS */
 .stats{background:var(--light);text-align:center;}
-.stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:40px;}
+
+.stat-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:40px;
+}
+
 .stat h3{font-size:36px;color:var(--primary);}
 
-/* SERVICES */
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:30px;
 }
+
 .card{
 background:var(--light);
 padding:30px;
@@ -105,28 +129,15 @@ border-radius:15px;
 box-shadow:0 10px 25px rgba(0,0,0,.07);
 transition:.4s;
 }
+
 .card:hover{transform:translateY(-8px);}
 
-/* PROCESS */
-.process-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-text-align:center;
-}
-.step{
-background:var(--light);
-padding:30px;
-border-radius:15px;
-box-shadow:0 8px 20px rgba(0,0,0,.06);
-}
-
-/* REVIEWS */
 .review-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:30px;
 }
+
 .review{
 background:var(--light);
 padding:30px;
@@ -134,81 +145,40 @@ border-radius:15px;
 box-shadow:0 8px 20px rgba(0,0,0,.06);
 }
 
-/* FAQ */
-.faq-item{margin-bottom:20px;border-radius:12px;overflow:hidden;}
-.faq-question{
-padding:18px;
-background:var(--primary);
-color:#fff;
-cursor:pointer;
-}
-.faq-answer{
-max-height:0;
-overflow:hidden;
-background:var(--light);
-transition:max-height .4s ease;
-padding:0 18px;
-}
-.faq-answer p{padding:15px 0;}
-
-/* CONTACT */
 .contact form{
 max-width:700px;
 margin:auto;
 display:grid;
 gap:20px;
 }
+
 .contact input,.contact textarea{
 padding:14px;
 border-radius:8px;
 border:1px solid #ddd;
+font-family:'Poppins';
 }
+
 .contact button{
-background:var(--dark);
+background:#111;
 color:#fff;
 padding:15px;
 border:none;
 border-radius:8px;
 cursor:pointer;
+font-weight:500;
 }
 
-/* POPUP */
-.popup{
-position:fixed;
-top:50%;
-left:50%;
-transform:translate(-50%,-50%);
-background:var(--light);
-padding:40px;
-border-radius:15px;
-display:none;
-box-shadow:0 20px 50px rgba(0,0,0,.3);
-z-index:3000;
-}
-
-/* BACK TO TOP */
-#topBtn{
-position:fixed;
-bottom:30px;
-right:30px;
-background:var(--primary);
-color:#fff;
-padding:12px 18px;
-border-radius:50%;
-cursor:pointer;
-display:none;
-}
-
-/* FOOTER */
 footer{
 background:#000;
 color:#fff;
 text-align:center;
-padding:25px 0;
+padding:40px 0;
+font-size:14px;
 }
 
-/* MOBILE */
 @media(max-width:768px){
+
 nav ul{
 position:absolute;
 top:60px;
@@ -220,9 +190,12 @@ text-align:center;
 display:none;
 padding:20px 0;
 }
+
 nav ul.active{display:flex;}
 .menu-toggle{display:block;}
 .hero h1{font-size:30px;}
+section{padding:70px 0;}
+
 }
 </style>
 </head>
@@ -230,20 +203,16 @@ nav ul.active{display:flex;}
 <body>
 
 <div class="topbar">
-Mon–Sat | Professional Estimating Services | Email: info@zaeemestimating.com
+Buildora Estimating LLC | Sheridan, Wyoming | +1 (307) 355-0577
 </div>
 
 <header>
 <div class="container">
 <nav>
-<div class="logo">Zaeem Estimating</div>
-<div>
-<span class="theme-toggle">🌙</span>
-<span class="menu-toggle">&#9776;</span>
-</div>
+<div class="logo">Buildora Estimating</div>
+<div class="menu-toggle">&#9776;</div>
 <ul>
 <li><a href="#services">Services</a></li>
-<li><a href="#process">Process</a></li>
 <li><a href="#reviews">Reviews</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
@@ -260,10 +229,10 @@ Mon–Sat | Professional Estimating Services | Email: info@zaeemestimating.com
 <section class="stats">
 <div class="container">
 <div class="stat-grid">
-<div class="stat"><h3 class="counter" data-target="450">0</h3><p>Projects Completed</p></div>
-<div class="stat"><h3 class="counter" data-target="99">0</h3><p>% Accuracy</p></div>
-<div class="stat"><h3 class="counter" data-target="48">0</h3><p>Hours Delivery</p></div>
-<div class="stat"><h3 class="counter" data-target="100">0</h3><p>% Satisfaction</p></div>
+<div class="stat"><h3>450+</h3><p>Projects Completed</p></div>
+<div class="stat"><h3>99%</h3><p>Accuracy Rate</p></div>
+<div class="stat"><h3>48hrs</h3><p>Delivery Time</p></div>
+<div class="stat"><h3>100%</h3><p>Client Satisfaction</p></div>
 </div>
 </div>
 </section>
@@ -271,91 +240,44 @@ Mon–Sat | Professional Estimating Services | Email: info@zaeemestimating.com
 <section id="services" class="container">
 <h2>Our Services</h2>
 <div class="cards">
-<div class="card">Quantity Takeoffs</div>
-<div class="card">Cost Estimation</div>
-<div class="card">Bid Preparation</div>
-<div class="card">Residential & Commercial Projects</div>
-</div>
-</section>
-
-<section id="process" class="container">
-<h2>Our Process</h2>
-<div class="process-grid">
-<div class="step"><h3>1. Submit Plans</h3><p>Email or share drawings securely.</p></div>
-<div class="step"><h3>2. Detailed Takeoff</h3><p>We prepare accurate material quantities.</p></div>
-<div class="step"><h3>3. Cost Breakdown</h3><p>Full cost estimation report delivered.</p></div>
-<div class="step"><h3>4. Win the Bid</h3><p>Submit confidently and secure projects.</p></div>
+<div class="card"><h3>Quantity Takeoffs</h3><p>Accurate material quantity breakdowns.</p></div>
+<div class="card"><h3>Cost Estimation</h3><p>Detailed labor & material pricing.</p></div>
+<div class="card"><h3>Bid Preparation</h3><p>Complete bid-ready documentation.</p></div>
+<div class="card"><h3>Residential & Commercial</h3><p>All project types covered.</p></div>
 </div>
 </section>
 
 <section id="reviews" class="container">
 <h2>Client Testimonials</h2>
 <div class="review-grid">
-<div class="review"><h4>Michael R. – Texas</h4><p>"Very professional and highly accurate service."</p></div>
-<div class="review"><h4>John D. – California</h4><p>"Reliable estimating partner for our company."</p></div>
-<div class="review"><h4>Sarah L. – Florida</h4><p>"Excellent turnaround time and detail."</p></div>
+<div class="review"><h4>Michael R. – Texas</h4><p>"Highly professional and extremely accurate."</p></div>
+<div class="review"><h4>John D. – California</h4><p>"Reliable estimating partner for our projects."</p></div>
+<div class="review"><h4>Sarah L. – Florida</h4><p>"Fast turnaround and detailed reports."</p></div>
 </div>
 </section>
 
 <section id="contact" class="contact container">
 <h2>Request a Quote</h2>
-<form id="contactForm" action="https://formspree.io/f/xpqjbjor" method="POST"><input type="text" name="name" placeholder="Your Name" required>
+<form action="https://formspree.io/f/xpqjbjor" method="POST">
+<input type="hidden" name="_subject" value="New Quote Request - Buildora Estimating">
+<input type="text" name="name" placeholder="Your Name" required>
 <input type="email" name="email" placeholder="Your Email" required>
 <textarea name="message" rows="5" placeholder="Project Details" required></textarea>
-<button type="submit">Submit</button>
+<button type="submit">Submit Request</button>
 </form>
 </section>
 
-<div class="popup" id="popup">
-<h3>Thank You!</h3>
-<p>Your request has been submitted successfully.</p>
-</div>
-
-<div id="topBtn">↑</div>
-
 <footer>
-© 2026 Zaeem Estimating | USA Construction Estimating Experts
+Buildora Estimating LLC<br>
+20N Gould Street, Sheridan, WY 82801, USA<br>
+Phone: +1 (307) 355-0577<br><br>
+© 2026 Buildora Estimating LLC. All Rights Reserved.
 </footer>
 
 <script>
 document.querySelector(".menu-toggle").onclick=function(){
 document.querySelector("nav ul").classList.toggle("active");
 };
-
-document.querySelector(".theme-toggle").onclick=function(){
-document.body.classList.toggle("dark");
-};
-
-document.querySelectorAll('.faq-question').forEach(q=>{
-q.onclick=function(){
-const ans=q.nextElementSibling;
-ans.style.maxHeight=ans.style.maxHeight?null:ans.scrollHeight+"px";
-};
-});
-
-const counters=document.querySelectorAll('.counter');
-counters.forEach(counter=>{
-const update=()=>{
-const target=+counter.getAttribute('data-target');
-const count=+counter.innerText;
-const inc=target/100;
-if(count<target){
-counter.innerText=Math.ceil(count+inc);
-setTimeout(update,20);
-}else{counter.innerText=target;}
-}
-update();
-});
-
-document.getElementById("contactForm").onsubmit=function(){
-setTimeout(()=>{document.getElementById("popup").style.display="block";},500);
-};
-
-const topBtn=document.getElementById("topBtn");
-window.onscroll=function(){
-topBtn.style.display=window.scrollY>300?"block":"none";
-};
-topBtn.onclick=function(){window.scrollTo({top:0,behavior:'smooth'});}
 </script>
 
 </body>
