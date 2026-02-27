@@ -1,284 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Buildora Estimating LLC | USA Construction Estimating Experts</title>
-<meta name="description" content="Professional Construction Estimating & Quantity Takeoff Services for USA Contractors. Accurate, Confidential & Fast Delivery.">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-:root{
---primary:#0d6efd;
---dark:#111;
---light:#fff;
---bg:#f4f7fb;
-}
-
-body{
-margin:0;
-font-family:'Poppins',sans-serif;
-background:var(--bg);
-color:#333;
-transition:.3s;
-scroll-behavior:smooth;
-}
-
-.container{width:90%;max-width:1200px;margin:auto;}
-section{padding:100px 0;}
-h2{text-align:center;margin-bottom:50px;font-size:34px;}
-
-.btn{
-background:var(--primary);
-color:#fff;
-padding:14px 30px;
-border-radius:8px;
-text-decoration:none;
-display:inline-block;
-transition:.3s;
-font-weight:500;
-}
-.btn:hover{opacity:.85}
-
-.topbar{
-background:#000;
-color:#fff;
-font-size:14px;
-padding:8px 0;
-text-align:center;
-}
-
-header{
-position:fixed;
-width:100%;
-top:0;
-background:rgba(0,0,0,.85);
-padding:15px 0;
-z-index:1000;
-}
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-.logo{
-color:#fff;
-font-weight:700;
-font-size:22px;
-}
-
-nav ul{
-display:flex;
-gap:30px;
-list-style:none;
-margin:0;
-padding:0;
-}
-
-nav ul li a{
-color:#fff;
-text-decoration:none;
-font-weight:500;
-}
-
-nav ul li a:hover{color:var(--primary);}
-
-.menu-toggle{
-display:none;
-color:#fff;
-font-size:26px;
-cursor:pointer;
-}
-
-.hero{
-background:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)),
-url('https://images.unsplash.com/photo-1503387762-592deb58ef4e');
-background-size:cover;
-background-position:center;
-color:#fff;
-text-align:center;
-padding:220px 20px 140px;
-}
-
-.hero h1{font-size:46px;margin-bottom:20px;}
-.hero p{max-width:700px;margin:auto;margin-bottom:35px;font-size:18px;}
-
-.stats{background:var(--light);text-align:center;}
-
-.stat-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:40px;
-}
-
-.stat h3{font-size:36px;color:var(--primary);}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px;
-}
-
-.card{
-background:var(--light);
-padding:30px;
-border-radius:15px;
-box-shadow:0 10px 25px rgba(0,0,0,.07);
-transition:.4s;
-}
-
-.card:hover{transform:translateY(-8px);}
-
-.review-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
-}
-
-.review{
-background:var(--light);
-padding:30px;
-border-radius:15px;
-box-shadow:0 8px 20px rgba(0,0,0,.06);
-}
-
-.contact form{
-max-width:700px;
-margin:auto;
-display:grid;
-gap:20px;
-}
-
-.contact input,.contact textarea{
-padding:14px;
-border-radius:8px;
-border:1px solid #ddd;
-font-family:'Poppins';
-}
-
-.contact button{
-background:#111;
-color:#fff;
-padding:15px;
-border:none;
-border-radius:8px;
-cursor:pointer;
-font-weight:500;
-}
-
-footer{
-background:#000;
-color:#fff;
-text-align:center;
-padding:40px 0;
-font-size:14px;
-}
-
-@media(max-width:768px){
-
-nav ul{
-position:absolute;
-top:60px;
-left:0;
-width:100%;
-background:#111;
-flex-direction:column;
-text-align:center;
-display:none;
-padding:20px 0;
-}
-
-nav ul.active{display:flex;}
-.menu-toggle{display:block;}
-.hero h1{font-size:30px;}
-section{padding:70px 0;}
-
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buildora Estimating | Construction Estimating Experts</title>
+  <style>
+    body { margin:0; font-family: 'Poppins', sans-serif; line-height:1.6; }
+    a { text-decoration:none; color:inherit; }
+    header { display:flex; justify-content:space-between; align-items:center; padding:20px; background:#f2f2f2; }
+    header img { height:60px; margin-right:15px; }
+    nav { display:flex; justify-content:center; gap:30px; padding:20px; background:#0077cc; color:white; position:sticky; top:0; z-index:1000; }
+    nav a { color:white; font-weight:bold; }
+    section { padding:80px 20px; }
+    .hero { text-align:center; background:url('blueprints.jpg') no-repeat center/cover; color:white; }
+    .hero h2 { font-size:48px; margin:0; }
+    .hero p { font-size:24px; margin:10px 0; }
+    .section-title { text-align:center; font-size:36px; margin-bottom:40px; color:#0077cc; }
+    .grid { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+    .grid-item { flex:1 1 300px; background:#f9f9f9; padding:20px; border-radius:10px; text-align:center; }
+    .grid-item img { width:100%; max-width:200px; margin-bottom:15px; border-radius:10px; }
+    footer { background:#0077cc; color:white; text-align:center; padding:40px 20px; }
+    .btn { display:inline-block; padding:10px 20px; background:#0077cc; color:white; border:none; border-radius:5px; cursor:pointer; margin-top:10px; }
+    .form-group { margin-bottom:15px; }
+    input, textarea { width:100%; padding:10px; border-radius:5px; border:1px solid #ccc; }
+    h3 { color:#0077cc; margin-bottom:10px; }
+    .client-logos { display:flex; flex-wrap:wrap; justify-content:center; gap:30px; margin-top:40px; }
+    .client-logos img { max-height:80px; object-fit:contain; }
+  </style>
 </head>
-
 <body>
 
-<div class="topbar">
-Buildora Estimating LLC | Sheridan, Wyoming | +1 (307) 355-0577
-</div>
-
+<!-- Header -->
 <header>
-<div class="container">
-<nav>
-<div class="logo">Buildora Estimating</div>
-<div class="menu-toggle">&#9776;</div>
-<ul>
-<li><a href="#services">Services</a></li>
-<li><a href="#reviews">Reviews</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
-</div>
+  <div style="display:flex; align-items:center;">
+    <img src="logo.png" alt="Company Logo">
+    <h1>Buildora Estimating</h1>
+  </div>
+  <div style="text-align:right;">
+    <p style="margin:0;">info@buildoraestimating.com | +1 123 456 7890</p>
+    <div style="margin-top:5px;">
+      <img src="facebook-icon.png" alt="Facebook" style="width:24px; margin-right:5px;">
+      <img src="linkedin-icon.png" alt="LinkedIn" style="width:24px; margin-right:5px;">
+      <img src="twitter-icon.png" alt="Twitter" style="width:24px;">
+    </div>
+  </div>
 </header>
 
-<section class="hero">
-<h1>USA Construction Estimating Experts</h1>
-<p>Helping Contractors Win More Bids with Accurate & Fast Quantity Takeoffs.</p>
-<a href="#contact" class="btn">Request a Free Quote</a>
+<!-- Navigation -->
+<nav>
+  <a href="#home">Home</a>
+  <a href="#services">Services</a>
+  <a href="#our-trades">Our Trades</a>
+  <a href="#about-us">About Us</a>
+  <a href="#get-estimate">Get Estimate</a>
+  <a href="#contact-us">Contact Us</a>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+  <h2>Buildora Estimating</h2>
+  <p>Turnaround Time: 24-48 Hours!</p>
+  <p>Affordable Estimates - 25% Off</p>
 </section>
 
-<section class="stats">
-<div class="container">
-<div class="stat-grid">
-<div class="stat"><h3>450+</h3><p>Projects Completed</p></div>
-<div class="stat"><h3>99%</h3><p>Accuracy Rate</p></div>
-<div class="stat"><h3>48hrs</h3><p>Delivery Time</p></div>
-<div class="stat"><h3>100%</h3><p>Client Satisfaction</p></div>
-</div>
-</div>
+<!-- Services Section -->
+<section id="services">
+  <h2 class="section-title">Construction Estimating Services</h2>
+  <div class="grid">
+    <div class="grid-item">
+      <img src="estimating.jpg" alt="Construction Bid Estimates">
+      <h3>Construction Bid Estimates</h3>
+      <p>Detailed estimating for general and subcontractors to ensure competitive and accurate bids.</p>
+    </div>
+    <div class="grid-item">
+      <img src="design-estimates.jpg" alt="Design Estimates">
+      <h3>Design Estimates</h3>
+      <p>Estimates for architects and designers using the latest software to streamline projects.</p>
+    </div>
+    <div class="grid-item">
+      <img src="material-takeoff.jpg" alt="Material Takeoff">
+      <h3>Construction Estimator</h3>
+      <p>Precise material takeoffs and estimations for accurate budgeting and planning.</p>
+    </div>
+  </div>
 </section>
 
-<section id="services" class="container">
-<h2>Our Services</h2>
-<div class="cards">
-<div class="card"><h3>Quantity Takeoffs</h3><p>Accurate material quantity breakdowns.</p></div>
-<div class="card"><h3>Cost Estimation</h3><p>Detailed labor & material pricing.</p></div>
-<div class="card"><h3>Bid Preparation</h3><p>Complete bid-ready documentation.</p></div>
-<div class="card"><h3>Residential & Commercial</h3><p>All project types covered.</p></div>
-</div>
+<!-- About Us -->
+<section id="about-us">
+  <h2 class="section-title">About Buildora Estimating</h2>
+  <p>At Buildora Estimating, we offer construction estimating and material takeoffs. We have been in the construction industry for over 10 years.</p>
+  <p>We use advanced software tools to provide precise estimates. Our pricing includes ZIP code-based adjustments for accurate cost representation in your area.</p>
+  <p>Our team ensures projects are delivered on time with detailed reporting for every client.</p>
 </section>
 
-<section id="reviews" class="container">
-<h2>Client Testimonials</h2>
-<div class="review-grid">
-<div class="review"><h4>Michael R. – Texas</h4><p>"Highly professional and extremely accurate."</p></div>
-<div class="review"><h4>John D. – California</h4><p>"Reliable estimating partner for our projects."</p></div>
-<div class="review"><h4>Sarah L. – Florida</h4><p>"Fast turnaround and detailed reports."</p></div>
-</div>
+<!-- Why Choose Us -->
+<section id="why-choose-us">
+  <h2 class="section-title">Why Choose Buildora Estimating</h2>
+  <div class="grid">
+    <div class="grid-item">
+      <h3>Fastest Turnaround Time</h3>
+      <p>We provide estimates within 24-48 hours.</p>
+    </div>
+    <div class="grid-item">
+      <h3>Affordable Prices</h3>
+      <p>Competitive rates with 25% discounts available.</p>
+    </div>
+    <div class="grid-item">
+      <h3>Accurate and Detailed Estimates</h3>
+      <p>Every estimate is carefully verified and precise.</p>
+    </div>
+    <div class="grid-item">
+      <h3>Certified Estimates</h3>
+      <p>Certified reports for contractors, architects, and designers.</p>
+    </div>
+    <div class="grid-item">
+      <h3>94% Bid Hit Ratio</h3>
+      <p>Highly skilled professional team delivering successful bids.</p>
+    </div>
+    <div class="grid-item">
+      <h3>24/7 Customer Support</h3>
+      <p>Our team is available any time to answer queries.</p>
+    </div>
+  </div>
 </section>
 
-<section id="contact" class="contact container">
-<h2>Request a Quote</h2>
-<form action="https://formspree.io/f/xpqjbjor" method="POST">
-<input type="hidden" name="_subject" value="New Quote Request - Buildora Estimating">
-<input type="text" name="name" placeholder="Your Name" required>
-<input type="email" name="email" placeholder="Your Email" required>
-<textarea name="message" rows="5" placeholder="Project Details" required></textarea>
-<button type="submit">Submit Request</button>
-</form>
+<!-- Our Trades / CSI Divisions -->
+<section id="our-trades">
+  <h2 class="section-title">Our Trades & CSI Divisions</h2>
+  <div class="grid">
+    <div class="grid-item">
+      <img src="mep.jpg" alt="MEP Estimating">
+      <h3>MEP Estimating</h3>
+      <p>Electrical, mechanical, and plumbing estimates for complete MEP systems, ensuring accurate material and labor calculations.</p>
+    </div>
+    <div class="grid-item">
+      <img src="concrete.jpg" alt="Concrete Estimating">
+      <h3>Concrete Estimating</h3>
+      <p>Precise concrete quantity takeoffs and cost estimation for foundations, slabs, and structural components.</p>
+    </div>
+    <div class="grid-item">
+      <img src="painting.jpg" alt="Painting Estimating">
+      <h3>Painting Estimating</h3>
+      <p>Accurate surface area calculations, material costing, and labor estimates for residential and commercial painting projects.</p>
+    </div>
+  </div>
+
+  <div class="grid" style="margin-top:40px;">
+    <div class="grid-item">
+      <img src="flooring.jpg" alt="Flooring Estimating">
+      <h3>Flooring Estimating</h3>
+      <p>Material takeoffs and cost estimation for all types of flooring including tile, wood, and carpet projects.</p>
+    </div>
+    <div class="grid-item">
+      <img src="drywall.jpg" alt="Drywall Estimating">
+      <h3>Drywall Estimating</h3>
+      <p>Detailed gypsum board quantity takeoffs and installation cost calculations for all building types.</p>
+    </div>
+    <div class="grid-item">
+      <img src="roofing.jpg" alt="Roofing Estimating">
+      <h3>Roofing Estimating</h3>
+      <p>Accurate roof material and labor estimates including shingles, metal roofing, and flat roofs.</p>
+    </div>
+  </div>
 </section>
 
-<footer>
-Buildora Estimating LLC<br>
-20N Gould Street, Sheridan, WY 82801, USA<br>
-Phone: +1 (307) 355-0577<br><br>
-© 2026 Buildora Estimating LLC. All Rights Reserved.
+<!-- How to Begin -->
+<section id="how-to-begin">
+  <h2 class="section-title">How to Begin with Buildora Estimating</h2>
+  <p>Submit your plans via our online form or email. Our team will review your project, provide a detailed estimate, and guide you through the bidding process.</p>
+</section>
+
+<!-- Get Estimate Form -->
+<section id="get-estimate">
+  <h2 class="section-title">Submit Your Plans</h2>
+  <form action="mailto:info@buildoraestimating.com" method="post" enctype="text/plain" style="max-width:600px; margin:0 auto;">
+    <div class="form-group">
+      <input type="text" name="name" placeholder="Your Name" required>
+    </div>
+    <div class="form-group">
+      <input type="email" name="email" placeholder="Your Email" required>
+    </div>
+    <div class="form-group">
+      <input type="text" name="phone" placeholder="Your Phone" required>
+    </div>
+    <div class="form-group">
+      <input type="file" name="plans" required>
+    </div>
+    <button type="submit" class="btn">Upload Plans</button>
+  </form>
+</section>
+
+<!-- Construction Cost Estimating Services -->
+<section id="construction-cost-services">
+  <h2 class="section-title">Construction Cost Estimating Services</h2>
+  <div class="grid">
+    <div class="grid-item">
+      <h3>Commercial Estimating</h3>
+      <p>Comprehensive estimates for commercial buildings, offices, retail, and industrial projects with detailed takeoffs.</p>
+    </div>
+    <div class="grid-item">
+      <h3>Residential Estimating</h3>
+      <p>Accurate residential project estimates, from single-family homes to multi-unit apartments.</p>
+    </div>
+    <div class="grid-item">
+      <h3>Industrial Estimating</h3>
+      <p>Estimating services for factories, warehouses, and production facilities with precise material and labor calculations.</p>
+    </div>
+    <div class="grid-item">
+      <h3>Civil Estimating</h3>
+      <p>Roads, bridges, and infrastructure estimates with accurate quantity takeoffs and cost breakdowns.</p>
+    </div>
+    <div class="grid-item">
+      <h3>Public Sector Estimating</h3>
+      <p>Government and municipal projects estimates compliant with standards and public sector requirements.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Our Construction Estimates -->
+<section id="our-estimates">
+  <h2 class="section-title">Our Construction Estimates & Material Takeoffs</h2>
+  <p>Buildora Estimating delivers accurate construction estimates and material takeoffs for every trade. We provide detailed reports, cost breakdowns, and actionable insights for contractors and project managers.</p>
+  <p>Our estimators are experienced professionals with expertise across commercial, residential, industrial, and public sector projects.</p>
+</section>
+
+<!-- Client Logos -->
+<section id="clients">
+  <h2 class="section-title">Our Clients</h2>
+  <div class="client-logos">
+    <img src="client1.png" alt="Client 1">
+    <img src="client2.png" alt="Client 2">
+    <img src="client3.png" alt="Client 3">
+    <img src="client4.png" alt="Client 4">
+  </div>
+</section>
+
+<!-- Footer / Contact -->
+<footer id="contact-us">
+  <h2>Contact Us</h2>
+  <p>buildoraestimating@gmail.com | +1 307 355 0577</p>
+  <p>Bid More, Win More | Construction Estimating & Material Takeoff Services</p>
 </footer>
-
-<script>
-document.querySelector(".menu-toggle").onclick=function(){
-document.querySelector("nav ul").classList.toggle("active");
-};
-</script>
 
 </body>
 </html>
